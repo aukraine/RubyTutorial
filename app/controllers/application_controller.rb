@@ -16,6 +16,7 @@ class ApplicationController < ActionController::Base
   private def check_if_admin
     #render text: "Access denied", status: 403 unless current_user.admin == true
     #render text: "Access denied", status: 403 unless params[:admin]
+
     render_403 unless params[:admin]
   end
 
