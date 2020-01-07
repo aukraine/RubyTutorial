@@ -1,0 +1,8 @@
+%h= @item.name
+
+%ul
+  %li= "#{ @item.price } UAH"
+  %li= urls_to_links(urls_to_images(@item.description))
+  %li #{t("item.weight")}: #{@item.weight} kg
+
+= render partial: "shared/email"

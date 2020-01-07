@@ -46,7 +46,11 @@ group :development do
 end
 
 gem 'paperclip'
-#gem 'cariewave'
+gem 'carrierwave'
+gem 'haml-rails'
+gem 'bootstrap-sass'
+gem 'simple_form'
+gem 'exception_notification'
 
 group :test do
   gem 'rspec-rails'

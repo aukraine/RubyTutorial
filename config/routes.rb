@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  #get ':controller(/:action(/:id))(.:format)'
-  #root :to => 'somecontroller#index"
+  # get ':controller(/:action(/:id))(.:format)'
+  # root :to => 'somecontroller#index"
 
   resources :items do
     get :upvote, on: :member
@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   end
 
   get 'admin/users_count' => "admin#users_count"
-  #resources :admin do
+  # resources :admin do
   #  #get :users_count, on: :collection
-  #end
+  # end
 
 end
