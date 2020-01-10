@@ -28,6 +28,7 @@ class ItemsController < ApplicationController
 
   # /items/1 GET
   def show
+    # raise "exception test!"
     # unless @item = Item.where(id: params[:id]).first
     unless @item
       render text: 'Page not found', status: 404

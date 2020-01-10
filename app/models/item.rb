@@ -22,6 +22,8 @@ class Item < ActiveRecord::Base
 
   has_one :image, as: :imageable
 
+  has_and_belongs_to_many :items
+
   def image=(i)
     if !image || !new_record?
       @image = Image.create(i.merge({imageable: self}))
