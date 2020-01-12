@@ -29,5 +29,7 @@ module RailsStore
       g.fixture_replacement :factory_girl, dir: 'rspec/factories'
     end
 
+    config.assets.precompile = [/(^[^_\/]|\/[^_])[^\/]*$/]
+
   end
 end
